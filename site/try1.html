@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Validate html</title>
+	<style>
+		*{box-sizing:border-box;}
+		h1{text-align:center;
+			color: green;
+
+
+		}
+		#box {
+		background-color: blue;
+		padding:10px 10px 10px 10px;
+		border:5px solid black;
+		margin:40px;
+		width:300px;
+		
+	}
+	#box1 {
+		background-color: blue;
+		padding:10px 10px 10px 10px;
+		border:5px solid black;
+		margin:40px;
+		width:300px;
+		box-sizing: border-box;
+	}
+	.content{
+		background-color: #90EE90;
+	}
+	</style>
+</head>
+<body>
+<h1 id="top">Validating HTML: </h1>
+<p>I am trying to validate my html by checking it at W3C.</p>
+<h2>These are links to same page:</h2>
+<section>
+	<ol>
+		<li><a href="#sec1">#sec1</a></li>
+		<li><a href="#sec2">#sec2</a></li>
+		<li><a href="#sec3">#sec3</a></li>
+		<li><a href="#boxmodel">BoxModel</a></li>
+	</ol>
+</section>
+<section id="sec1">
+<h2>Now lets try an unordered list:</h2>
+<div>
+	This is an unordered shopping list:
+<ul>
+	<li>Milk</li>
+	<li>Rice</li>
+	<li>Biscuits
+		<ul>
+			<li>Mom's magic</li>
+			<li>Goodday</li>
+			<li>Oreo</li>
+		</ul>
+    </li>
+    <li>Bread</li>
+    <li>Butter</li>
+</ul>
+</div>
+</section>
+
+<section id="sec2">
+<div>
+	This is an ordered shopping list:
+<h3>Oreo cookie eating procedure:</h3>
+<ol>
+	<li>Open the box</li>
+	<li>Take the cookie out</li>
+	<li>Make a double oreo
+		<ol>
+			<li>Peel off the top part</li>
+			<li>Place another cookie in the middle</li>
+			<li>Put back the top part</li>
+		</ol>
+    </li>
+    <li>Enjoy!</li>
+</ol>
+</div>
+</section>
+
+<section id="sec3">
+<h3>Entity reference:</h3>
+<div>
+Since many html symbols can be used even as the main content, to avoid error it is best to use alternate symbols.
+<br> The 3 most common issues occure in : 
+<table border="1">
+<tr>
+	<td>Instead of:</td><td>Use these:</td>
+</tr>
+<tr>
+	<td><</td><td>&(lt);</td>
+</tr>
+<tr>
+	<td>></td><td>&(gt);</td>
+</tr>
+<tr>
+	<td>&</td><td>&(amp);</td>
+</tr>
+</table>
+<strong>Note:</strong> I am using (lt),(gt),(amp) so that it doesnt get converted to <,>,& on the browser.	
+</div>
+</section>
+<h2>Internal link:</h2>
+Lets try adding a link to index.html which is located in the same folder as this html.
+<a href="index.html" title="same dir link">Click here to go to index</a>
+Lets try doing the same thing again but now using a div tag to keep the link in another line.<a href="index.html" title="same dir link"><div>Click here to go to index</div></a>
+<h2>External link:</h2>
+Now lets add an extrenal link.
+<a href="https://www.gadgetsnow.com/mobile-phones" title="phone">Click to view phones</a><br>
+Now the same link will open in a new page as i use target="blank".
+<a href="https://www.gadgetsnow.com/mobile-phones" target="blank" title="phones"><div>click to view phones</div></a>
+<setion>
+	This link will take you back to the top of the page: &copy(copyright symbol)<br>
+	<a href="#top" title="top of page">Go back up</a>
+	</setion>
+	<section id="boxmodel">
+	<h1 style="text-align: left;">The Box Model:</h1>
+<div id="box">
+	<div class="content">Let us try and understand a box model. Here i have assigned the width of the box to be 300px..but it doesn't count the size of the padding, margin and border.</div>
+</div>
+<div id="box1">
+	<div class="content">Now the same method is used here except, i have set box-sizing as border-box. So now this box with the padding and margin included is 300px.</div>
+</div>
+
+</section>
+</body>
+</html>

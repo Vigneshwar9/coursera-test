@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box model</title>
+    <style>
+
+     body{
+     	margin:0;
+        padding:0;
+        background-color: grey;   
+     }
+	#box {
+		background-color: blue;
+		padding:10px 10px 10px 10px;
+		border:5px solid black;
+		margin:40px;
+		width:300px;
+		
+	}
+	#box1 {
+		background-color: blue;
+		padding:10px 10px 10px 10px;
+		border:5px solid black;
+		margin:40px;
+		width:300px;
+		box-sizing: border-box;
+	}
+	#box2 {
+		background-color: blue;
+		padding:10px 10px 10px 10px;
+		border:5px solid black;
+		margin:40px;
+		height:90px;
+		width:300px;
+		box-sizing: border-box;
+	}
+	#box3 {
+		background-color: blue;
+		padding:10px 10px 10px 10px;
+		border:5px solid black;
+		margin:40px;
+		height:90px;
+		width:300px;
+		box-sizing: border-box;
+		overflow: auto;
+	}
+	.content{
+		background-color: #90EE90;
+	}
+	a:link, a:visited {
+			text-decoration: none;
+			background-color: LightGreen;
+			border:1px solid red;
+			color:blue;
+			display:block;
+			width:200px;
+			text-align: center;
+			padding:5px;
+
+           }
+           a:active, a:hover {
+           	background-color: green;
+           	color:red;
+           	opacity: 0.7;
+           }
+           #bg{background-color: blue;}
+</style>
+</head>
+<body>
+<h1>The Box Model:</h1>
+<div id="box">
+	<div class="content">Let us try and understand a box model. Here i have assigned the width of the box to be 300px..but it doesn't count the size of the padding, margin and border.</div>
+</div>
+<div id="box1">
+	<div class="content">Now the same method is used here except, i have set box-sizing as border-box. So now this box with the padding and margin included is 300px.</div>
+</div>
+<p><strong>NOTE:</strong>You can use *{} in style to provide one property to the entire page. The border-box is not parent inherant which means it can't be used on a body tag.<br> So instead you can use it in *{}. Click on the link below and there both boxes will be of same width as i have used *{box-size:border box;}</p>
+<a href="try1.html" title="same dir link" target="blank">Box Model</a>
+<div id="box2">
+	<div class="content">Now I am going to try and make anothher similar box  but this time i will reduce the height and width of the box in such a way that it spills. That is the content begins to overflow</div>
+</div>
+<h2 style="margin-top: 100px">This is fixed using 'overflow'</h2>
+<div id="box3">
+	<div class="content">Now I am going to try and make anothher similar box  but this time i will reduce the height and width of the box in such a way that it spills. That is the content begins to overflow.</div>
+</div>
+<p>A you can see, the browser automatically tacles such a situation when we use overflow: scroll/auto/hidden;</p>
+<h1>The Background Property:</h1>
+<div id="bg">Lets try various background properties by adding image in it as well.</div>
+</body>
+</html>

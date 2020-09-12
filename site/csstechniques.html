@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>csstechniques</title>
+	<style>
+		header li{list-style: none;}
+		a:link, a:visited {
+			text-decoration: none;
+			background-color: yellow;
+			border:1px solid red;
+			color:black;
+			display:block;
+			width:200px;
+			text-align: center;
+			padding:5px;
+
+           }
+           a:active, a:hover {
+           	background-color: green;
+           	color:blue;
+           	opacity: 0.7;
+           }
+           div{font-size: 120%;}
+           header li:nth-child(3){font-size:24px;}
+           section div{
+           	padding:5px;
+           	}
+           	section div:nth-child(odd){
+           		background-color: grey;}
+            section div:nth-child(even):hover{
+            	color:red;
+            	background-color: yellow;
+            }
+            .style{
+            	font-family: Arial, helvetica, sans-serif;
+            	color:#0000ff;
+            	font-style: italic;
+            	font-weight: bold;
+            	font-size: 20px;
+            	text-transform:uppercase;
+            }
+	</style>
+</head>
+<body>
+<h1>Pseudo class selectors:</h1>
+<p>Let us try pseudo class techniques on the links below:</p>
+<header>
+	<ul>
+		<li><a href="https://www.amazon.in/mobile-phones/b?ie=UTF8&node=1389401031" target="blank">Amazon</a></li>
+		<li><a href="https://www.flipkart.com/?ef_id=CjwKCAjwnef6BRAgEiwAgv8mQSJ2kJnRhDNKSyDKn7KZStYcfTdgT6LvXFsw1ZTN8w5ps4LNlSLTQhoCmUIQAvD_BwE:G:s&s_kwcid=AL!739!3!326505318642!e!!g!!flipkart&semcmpid=sem_8024046704_brand_city_goog&gclid=CjwKCAjwnef6BRAgEiwAgv8mQSJ2kJnRhDNKSyDKn7KZStYcfTdgT6LvXFsw1ZTN8w5ps4LNlSLTQhoCmUIQAvD_BwE" target="blank">Flipkart</a></li>
+		<li><a href="https://www.myntra.com/?utm_source=Google&utm_medium=cpc&utm_campaign=Search%20-%20Myntra%20Brand%20(India)&gclid=CjwKCAjwnef6BRAgEiwAgv8mQTJChD9FcNu2GOUOocR3OWjsFLocseD1qsUKFPrw5sh2-adfGS6ZFhoCh64QAvD_BwE" target="blank">Myntra</a></li>
+	</ul>
+</header>
+<p>Here i am making the links interactive to the users by using a:hover, a:active, a:visited, a:link and providing certain styles to each. <br>Now i am using <strong>n-th child</strong> Technique to make just Myntra big. I've also reduced opacity while you move cursor over the links.</p>
+<section>
+	<div>div 1</div>
+	<div>div 2</div>
+	<div>div 3</div>
+	<div>div 4</div>
+	<div style="font-size: 1.5em">div 5</div>
+	<div style="font-size: 2em">div 6</div>
+	<div style="font-size: 2.5em">div 7</div>
+</section>
+<p class="style">Here, I've used <strong>n-th child on div in section</strong> to acheive these effects. The odd div''s are grey and when you hover the cursor over the even div's, they change color.</p>
+
+</body>
+</html>
