@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media Query</title>
+	<style>
+		*{box-sizing: border-box;}
+		#p1 {
+			background-color: red;
+			width:200px;
+			height:200px;
+		}
+		#p2 {
+			background-color: blue;
+			width:150px;
+			height:150px;
+		}
+			/* Large devices only */
+			@media (min-width: 1200px) {
+             
+             #p1 {
+			background-color: red;
+			width:60%;
+			height:200px;
+		      }
+		#p2 {
+			background-color: blue;
+			width:40%;
+			height:150px;
+
+			}
+
+		}
+			/*Medium devices only */
+			@media (min-width: 662px) and (max-width: 1199px) {
+             
+             #p1 {
+			background-color: red;
+			width:40%;
+			height:200px;
+		      }
+		#p2 {
+			background-color: blue;
+			width:20%;
+			height:150px;
+
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Media Query</h1>
+
+<p id="p1">Let us try using media queries to change the structure of the box based on the size of the screen.</p>
+<p id="p2">The structer above 1200px is different compared to when below 1200px!</p>
+click here to go to a responsive design page.
+<a href="responsive.html" target="blank">responsive design</a>
+</body>
+</html>
