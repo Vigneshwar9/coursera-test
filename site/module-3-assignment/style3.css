@@ -1,13 +1,12 @@
 body{
-  font-size: 16px;  
+	font-size: 16px;	
   font-family: 'Exo 2', sans-serif;
-  background-color: #DC143C;
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
   border: 2px solid #000 !important;
 }
 #header-nav{
-  background-color:#FFD700;  
+  background-color:#999999;  
   border:2px solid #000; 
   border-radius: 0;
 }
@@ -57,7 +56,6 @@ body{
 }
 .menu-content{ 
   margin-top:40px;
-
 }
 .menu-title{
   font-weight: bold;
@@ -90,15 +88,4 @@ body{
     font-size: 1em;
     padding:5px 15px;
   }
-}
-h4 {
-  background-color:#FFD700;
-  border: 2px solid black;
-  width:100px;
-  margin:-10px -10px -10px -10px;
-
- }
-hr {
-  
-  width: 80%;
 }
