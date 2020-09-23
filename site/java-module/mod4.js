@@ -89,3 +89,17 @@ var obj={
 for (var prop in obj){
 	console.log(prop +":"+ obj[prop]);
 }
+
+console.log(document.getElementById("title"));
+
+function say() {
+	var ip = document.getElementById("name").value;
+	var msg ="<h2>hello " + ip +"!</h2>";
+	document.getElementById("content").innerHTML =msg;
+
+	if (ip === "student"){
+		var title=document.querySelector("#title").textContent;
+		title+=" & DOM"; 
+       document.querySelector("#title").textContent = title;
+	}
+}
